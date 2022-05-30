@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family:'Source Sans Pro', sans-serif;
+    background-color: #FBFFFB;
+    color: darkslategrey;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    color: #266035;
+    letter-spacing: 3px;
+}
+
+h1{
+    font-size: 5rem;
+    color: #FBFFFB;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #266035;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #266035;
+}
+
+a{
+    color: #266035;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 2s;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+    color:#419E57;
+}
+
+section, footer{
+    padding: 4% 0;
+}
+
+button{
+    padding: 2% 4%;
+    border: 3px solid #266035;
+    color: #266035;
+    font-size: 1.6rem;
+    background-color: #FBFFFB;
+    transition: 2s;
+    margin-top: 3%;
+}
+
+button:hover{
+    background-color: #266035;
+    color: #FBFFFB;
+}
+
+/* Helper Classes */
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header Section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo{
+    width: 7%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.links{
+    width: 50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* Top Section */
+#top{
+    height: 90vh;
+    background-image: url('../images/header.jpg');
+    background-position: bottom;
+    margin-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section */
+#about{
+    height: 85vh;
+    background-image: url(../images/about-img.jpg);
+    background-position: center left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+#about div{
+    width: 20%;
+    margin-right: 10%;
+}
