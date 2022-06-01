@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 html {
@@ -126,7 +126,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 
 #about div{
@@ -154,7 +154,7 @@ nav {
     justify-content: center;
     align-items: center;
     /*padding: 6%; *//* Pads all sides */
-    text-align:justify;
+    text-align:center;
 }
 
 .text div{
@@ -217,4 +217,112 @@ footer h3, footer a{
 
 .right img{
     width: 50%;
+}
+
+/* Media Queries: */
+/* 
+max-width - desktop first, scaling down to mobile
+min-width - mobile first, scaling up to desktop 
+*/
+
+/* Tablet */
+/* Apply styles to 800px or smaller width */
+@media(max-width:800px){
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    .links{
+        width:100%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    /* Top Section */
+    #top{
+        margin-top: 10%;
+    }
+    /* About Section */
+    #about{
+        background-image: none;
+        background-color: #dedfe0;
+        justify-content: center;
+        height: auto;
+        padding: 8% 0;
+    }
+    #about div{
+        width: 80%;
+        margin-right: 0;
+    }
+    .left div{
+        width: 80%;
+    }
+}
+
+/* Phone */
+@media(max-width: 500px){
+    /* Logo on navigation bar */
+    .logo{
+        width: 10%;
+    }
+    /* Top Section */
+    #top{
+        margin-top: 18%;
+    }
+    /* Shop Section */
+    .container{
+        justify-content: center;
+    }
+    .one{
+        order:1;
+        width: 90%;
+    }
+    .two{
+        order:2;
+        width: 90%;
+    }
+    .three{
+        order:3;
+        width: 90%;
+    }
+    .four{
+        order:4;
+        width: 90%;
+    }
+    .five{
+        order:5;
+        width: 90%;
+    }
+    .six{
+        order:6;
+        width: 90%;
+    }
+    .text div{
+        width: 90%;
+    }
+    /* Footer Section */
+    .left, .right{
+        width:100%;
+    }
+    .right{
+        order:-1;
+    }
+    .right img{
+        width: 60%;
+    }
+    .left div{
+        width: 60%;
+        text-align: center;
+    }
+    footer h3{
+        text-align: center;
+    }
+    footer h2{
+        order:-2;
+    }
+    .bottom{
+        text-align: center;
+        width: 100%;
+    }
 }
